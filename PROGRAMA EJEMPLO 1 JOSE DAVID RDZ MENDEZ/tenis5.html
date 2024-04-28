@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>COMPRA EN DIVINE BOUTIQUE</title>
+    </head>
+
+  <!--STYLE DE BARRA DONDE VA NUESTRO LOGOTIPO-->
+
+  <style>
+    /* Estilos para la barra de color */
+    .barra-color {
+      background-color: black; /* Cambia #3498db por el color que desees */
+      padding: 5px; /* Añade espacio alrededor del contenido dentro de la barra */
+      color: white; /* Color del texto en la barra */
+      text-align: center; /* Centra el texto horizontalmente */
+      
+    }
+  </style>
+    <!--FIN STYLE LINEA DE LOGO-->
+
+
+
+       <!--STYLE DE TARJETA PARA COLOCAR LA IMAGEN ESTETICAMENTE-->
+
+    <style>
+      .tarjeta {
+        width: 770px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .imagen {
+        width: 100%;
+        height: 620px;
+      }
+    </style>
+       <!--FIN DE STYLE DE TARJETA PARA COLOCAR LA IMAGEN ESTETICAMENTE-->
+       
+       
+       
+       <!--STYLE QUE NOS PERMITE INGRESAR LOS H2 PARA ESCRIBIR DATOS DEL PRODUCTO CON COORDENADAS-->
+
+       <style>
+        h1 {
+          position: absolute;
+          top: 100px; /* Cambia la posición vertical */
+          left: 950px; /* Cambia la posición horizontal */
+        }
+      </style>
+       <div>
+       <style>
+         
+        h3 {
+          position: absolute;
+          top: 200px; /* Cambia la posición vertical */
+          left: 800px; /* Cambia la posición horizontal */
+        }
+      </style>
+             <!--FIN DE STYLE QUE NOS PERMITE INGRESAR LOS H2 PARA ESCRIBIR DATOS DEL PRODUCTO CON COORDENADAS-->
+
+             <style>
+              .boton {
+                font-size: 20px; /* Tamaño de fuente del botón */
+                padding: 15px 30px; /* Espaciado interno del botón */
+              }
+            </style>
+             
+             <style>
+                .popup {
+                  display: none; /* Ocultar la ventana emergente por defecto */
+                  position: fixed; /* Posición fija en la ventana del navegador */
+                  top: 50%; /* Centrar verticalmente */
+                  left: 50%; /* Centrar horizontalmente */
+                  transform: translate(-50%, -50%); /* Centrar completamente */
+                  width: 300px; /* Ancho de la ventana emergente */
+                  padding: 20px;
+                  background-color: #fff;
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                  z-index: 9999; /* Z-index alto para que aparezca sobre otros elementos */
+                }
+              
+                /* Estilo para el fondo oscuro detrás de la ventana emergente */
+                .overlay {
+                  display: none; /* Ocultar el fondo oscuro por defecto */
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-color: rgba(0, 0, 0, 0.5); /* Color oscuro con transparencia */
+                  z-index: 9998; /* Z-index menor para que esté detrás de la ventana emergente */
+                }
+              </style>
+
+
+           
+ <body>
+  <!--COMIENZA LINEA ESTETICA COLOR NEGRO CON NUESTRO LOGO-->
+    <div class="barra-color">
+        
+        <h2 style="font-family: Arial, sans-serif; font-size: 28px;">COMPRAS DIVINE BOUTIQUE</h2>
+
+</div>
+  <!--FIN LINEA DE LOGO-->
+        
+  <!-- Tarjeta de imagen -->
+<div class="tarjeta">
+  <img class="imagen" src="imagenescarrusel/adidasstan.jpg" alt="">
+  
+</div>
+<h1>  Adidas ORIGINALS Stan Smith <center> Zapatos Casuales Unisex </center></h1>
+
+
+<h3><br><center>DESCRIPCION... </center><br>Snekears Casuales ideales para salidas , con un diseno ergonomico y comodo para cualquier tipo de pie con un diseno atractivo a la vista para cualquier persona con materiales superiores a los demas disenos y competencia dando mayor comodidad y estilo.<br><br><center>COSTO:$2,879<br><br><center>ENVIO A DOMICILIO SIN COSTO<br> </center> <center><br><button class="boton" onclick="openPopup()">COMPRAR</button></button></h3>
+
+    </body>
+    <div class="barra-color">
+        
+      
+      
+        <p style="font-family: Arial, sans-serif; font-size: 12px;"><br><br><br><br><br><br><br>CREADOR: JOSE DAVID RODRIGUEZ MENDEZ<br>FECHA DE CREACION: 28/04/24<br>REPRESENTACION DE TIENDA DE MODA (ZAPATOS, ROPA, ETC...)
+
+</div>
+<!-- Contenedor de la ventana emergente -->
+<div id="popup" class="popup">
+    <p>COMPRO: Adidas ORIGINALS Stan SmithZapatos Casuales Unisex<br>
+        <p>ENVIO: GRATIS<br></p>
+      <p>PRECIO: $2,199<br></p>
+      <p>Gracias Por Su Compra</p>
+      <p>ID: 1953391101</p>
+
+
+    <button onclick="closePopup()">Cerrar</button>
+  </div>
+  
+  <!-- Fondo oscuro detrás de la ventana emergente -->
+  <div id="overlay" class="overlay"></div>
+  <script>
+    function openPopup() {
+      // Mostrar la ventana emergente y el fondo oscuro
+      document.getElementById('popup').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+  
+    function closePopup() {
+      // Ocultar la ventana emergente y el fondo oscuro
+      document.getElementById('popup').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+    
+  </script>
+</html>

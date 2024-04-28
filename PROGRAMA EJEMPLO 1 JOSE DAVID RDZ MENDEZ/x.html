@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ventana Emergente</title>
+<style>
+  /* Estilo para el contenedor de la ventana emergente */
+  .popup {
+    display: none; /* Ocultar la ventana emergente por defecto */
+    position: fixed; /* Posición fija en la ventana del navegador */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar completamente */
+    width: 300px; /* Ancho de la ventana emergente */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Z-index alto para que aparezca sobre otros elementos */
+  }
+
+  /* Estilo para el fondo oscuro detrás de la ventana emergente */
+  .overlay {
+    display: none; /* Ocultar el fondo oscuro por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color oscuro con transparencia */
+    z-index: 9998; /* Z-index menor para que esté detrás de la ventana emergente */
+  }
+</style>
+<style>
+    .boton {
+      font-size: 20px; /* Tamaño de fuente del botón */
+      padding: 15px 30px; /* Espaciado interno del botón */
+    }</style>
+
+
+</head>
+<body>
+
+<!-- Botón para abrir la ventana emergente -->
+<button class="boton" onclick="openPopup()">Abrir Vena Emergente</button>
+    <!--<button class="boton">COMPRAR AHORA</center></button>-->
+
+
+    
+<!-- Contenedor de la ventana emergente -->
+<div id="popup" class="popup">
+  <h2>¡Ventana Emergente!</h2>
+  <p>Contenido de la ventana emergente aquí.</p>
+  <button onclick="closePopup()">Cerrar</button>
+</div>
+
+<!-- Fondo oscuro detrás de la ventana emergente -->
+<div id="overlay" class="overlay"></div>
+<script>
+  function openPopup() {
+    // Mostrar la ventana emergente y el fondo oscuro
+    document.getElementById('popup').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+  }
+
+  function closePopup() {
+    // Ocultar la ventana emergente y el fondo oscuro
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+  }
+  
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+<button class="boton" onclick="openPopup()">Abrir Vena Emergente</button>
